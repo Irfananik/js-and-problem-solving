@@ -17,7 +17,7 @@ console.log(uniqueName); */
 
 
 // Task - 02 Explore string nature and reverse a string
-const myString = ("Hello sir, how are you?");
+/* const myString = ("Hello sir, how are you?");
 
 function reverseString(text) {
     let reverse = '';
@@ -28,4 +28,15 @@ function reverseString(text) {
     return reverse;
 }
 const reversLetter = reverseString(myString);
-console.log(reversLetter);
+console.log(reversLetter); */
+
+
+
+
+// Task - 03  sum two numbers with function........................................
+function sumTwoNumbers(a, b) {
+    const sum = a + b;
+    return sum;
+}
+let result = sumTwoNumbers(12, 11);
+console.log(result);
