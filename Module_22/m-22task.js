@@ -129,7 +129,7 @@ console.log(totalPrice); */
 
 
 // Task - 8 Traveling in a Jungle and counting wild animals
-function forestTravel(miles) {
+/* function forestTravel(miles) {
     const densityFirst10Miles = 10;
     const densitySecond10Miles = 50;
     const densityThird10Miles = 100;
@@ -152,4 +152,4 @@ function forestTravel(miles) {
     }
 }
 
-console.log(forestTravel(24));
+console.log(forestTravel(24)); */
