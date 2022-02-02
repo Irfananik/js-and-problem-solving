@@ -114,7 +114,7 @@ console.log(totalPrice); */
 
 
 
-const cart = [
+/* const cart = [
     { name: "mobile", price: 46000, quantity: 1 },
     { name: "laptop", price: 76000, quantity: 1 },
     { name: "watch", price: 6000, quantity: 2 },
@@ -125,4 +125,31 @@ for (let product of cart) {
     productTotal = product.price * product.quantity;
     totalPrice += productTotal;
 }
-console.log(totalPrice);
+console.log(totalPrice); */
+
+
+// Task - 8 Traveling in a Jungle and counting wild animals
+function forestTravel(miles) {
+    const densityFirst10Miles = 10;
+    const densitySecond10Miles = 50;
+    const densityThird10Miles = 100;
+    if (miles <= 10) {
+        const firstMileCount = miles * densityFirst10Miles;
+        return firstMileCount;
+    } else if (miles <= 20) {
+        const firstMileCount = 10 * densityFirst10Miles;
+        const removeMile = miles - 10;
+        const secondMileCount = removeMile * densitySecond10Miles;
+        const totalAnimal = firstMileCount + secondMileCount;
+        return totalAnimal;
+    } else {
+        const firstMileCount = 10 * densityFirst10Miles;
+        const secondMileCount = 10 * densitySecond10Miles;
+        const removeMile = miles - 20;
+        const thirdMileCount = removeMile * densityThird10Miles;
+        const totalAnimal = firstMileCount + secondMileCount + thirdMileCount;
+        return totalAnimal;
+    }
+}
+
+console.log(forestTravel(24));
